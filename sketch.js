@@ -62,10 +62,10 @@ function draw() {
 	
 	imageMode(CENTER);
 
-	image(paperImg,ball.position.y,ball.position.x,radius,radius);
+	//image(paperImg,ball.position.y,ball.position.x,radius,radius);
 	//image(paperImg,ball.position.x,ball.position.y,radius/2,radius/2);
 	//ellipse(ball.position.x,ball.position.y,radius,radius);
-	//image(paperImg,ball.position.x,ball.position.y,radius,radius);
+	image(paperImg,ball.position.x,ball.position.y,radius,radius);
 
 
 	
@@ -81,7 +81,7 @@ function draw() {
 function keyPressed() {
   	if (keyCode === UP_ARROW) {
 
-		Matter.Body.applyForce(ball,ball.position,{x:85,y:-85});
+		Matter.Body.applyForce(ball,ball.position,{x:85,y:-65});
     
   	}
 }
